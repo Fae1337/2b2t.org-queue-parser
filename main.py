@@ -40,7 +40,7 @@ async def get_queue_from_api():
 
     url = "https://2b2t.org/api/queue?last=true"
     response = requests.get(url)
-    response.raise_for_status()  # Проверка на ошибки HTTP
+    response.raise_for_status()
     data = response.json()
 
     if data:
